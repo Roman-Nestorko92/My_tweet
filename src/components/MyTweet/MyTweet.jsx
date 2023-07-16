@@ -31,7 +31,7 @@ const MyTweet = () => {
 
   const [followersCount, setFollowersCount] = useState(() => {
     const followers = JSON.parse(localStorage.getItem('followers')) || {};
-    return followers[userId] || 0;
+    return followers[userId] || 100500;
   });
 
   useEffect(() => {
